@@ -1,0 +1,9 @@
+steamreviews==0.9.5
+Flask==3.0.1
+Markdown==3.5.2
+torch==2.1.2
+transformers[torch]==4.37.0
+datasets==2.16.1
+scikit-learn==1.4.0
+pandas==2.2.0
+evaluate==0.4.1

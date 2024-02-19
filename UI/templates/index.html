@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/structure.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/elements.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/AI_chat.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <title>Steam review analysis</title>
+    <!-- <meta http-equiv="refresh" content="1"> ligne à enlever après dev -->
+</head>
+
+<body>
+
+    <div id="markdown_div" class="container_MD">
+        <div type="image" class="hideReadme" onclick="displayReadme()"></div>
+        <div id="markdown_text" class="right-divs markdown_div"></div>
+    </div>
+    
+    <div>
+        <div class="container_AI" id="GUI_to_interact_with">
+            <div type="image" class="seeReadme" onclick="displayReadme()"></div>
+
+            <div id="params" class="left-div">
+                <h1>Review Generation</h1>
+                <div class="vertical-alignement">
+                    <textarea class="game_genre" id="genre" placeholder="Fill in game's genre" rows="1"></textarea>
+                </div>
+                <div class="vertical-alignement">
+                    <span class="text-parameter">Negative</span>
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox_positive">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="text-parameter">Positive</span>
+                </div>
+                <div class="vertical-alignement generateButton" id="generate-button" onclick="generateReview()"></div>
+            </div>
+
+
+            <div class="right-divs">
+                <div id="review_to_analyse" class="right-div">
+                    <h1>Review analysis</h1>
+                    <div class="horizontal-alignement">
+                        <textarea class="user_input" id="user_input" placeholder="Fill in a review to analyse" rows="5"></textarea>
+                        <div type="image" class="sendButton" id="send-button" onclick="sendData()"></div>
+                    </div>
+                    <span id="error_msg" class="error_msg"></span>
+                </div>
+                <div id="AI_prompt" class="right-div">
+                    <div id="chat-messages"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

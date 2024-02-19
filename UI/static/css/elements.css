@@ -1,0 +1,164 @@
+ /* The switch - the box around the slider */
+ h1 {
+    font: bold;
+    color: #1a9fff;
+ }
+ h2 {
+    font: bold;
+     color: #1a9fff;
+ }
+ h3 {
+    font: bold;
+     color: #1a9fff;
+ }
+
+ p {
+    color:rgb(190, 190, 190);
+    margin-bottom: 5px;
+ }
+
+ code {
+    background-color: #0a0d0f;
+    width:fit-content;
+ }
+
+ .error_msg {
+    color:rgb(187, 0, 0);
+    size: 8px;
+ }
+
+ .switch {
+     position: relative;
+     display: inline-block;
+     width: 48px;
+     height: 28px;
+     margin-right: 10px;
+ }
+
+ /* Hide default HTML checkbox */
+ .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+ }
+
+ /* The slider */
+ .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgb(0, 1, 36);
+     -webkit-transition: .4s;
+     transition: .4s;
+ }
+ .slider:before {
+     position: absolute;
+     content: "";
+     height: 20px;
+     width: 20px;
+     left: 4px;
+     bottom: 4px;
+     background-color: white;
+     -webkit-transition: .4s;
+     transition: .4s;
+ }
+ input:checked+.slider {
+     background-color: #1a9fff;
+ }
+ input:focus+.slider {
+     box-shadow: 0 0 1px #0e69ab;
+ }
+ input:checked+.slider:before {
+     -webkit-transform: translateX(20px);
+     -ms-transform: translateX(20px);
+     transform: translateX(20px);
+ }
+ /* Rounded sliders */
+ .slider.round {
+     border-radius: 34px;
+ }
+ .slider.round:before {
+     border-radius: 50%;
+ }
+
+
+ .text-parameter {
+     color: rgb(213, 213, 213);
+     margin-right: 10px;
+ }
+
+ .user_input {
+     background-color: rgb(213, 213, 213);
+     resize: none;  
+     border-radius: 5px;
+     width: 815px;
+     height: 150px;
+     padding: 5px;
+     color: rgb(20,20,20);
+ }
+
+ .game_genre {
+     background-color: rgb(213, 213, 213);
+     resize: none;
+     border-radius: 5px;
+     padding: 5px;
+     color: rgb(20,20,20);
+ }
+
+ @keyframes rotate {
+     from {
+         transform: rotate(0deg);
+     }
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
+.sendButton {
+    background-image: url('icons/send.png');
+    width: 25px; /* Ajustez la largeur selon vos besoins */
+    height: 25px; /* Ajustez la hauteur selon vos besoins */
+    background-size: cover;
+    margin-left: 5px;
+    border: none; /* Supprime le style de bordure par défaut */
+    cursor: pointer; /* Change le curseur au survol */
+    border-radius: 5px;
+}
+
+.sendButton:hover {
+    border: 1px solid #fff;
+}
+
+.generateButton {
+    background-image: url('icons/generate_base.png');
+    width: 110px; /* Ajustez la largeur selon vos besoins */
+    height: 40px; /* Ajustez la hauteur selon vos besoins */
+    background-size: cover;
+    cursor: pointer; /* Change le curseur au survol */
+    border-radius: 5px;
+}
+
+.generateButton:hover {
+    border: 1px solid #fff;
+}
+
+.seeReadme {
+    width: 15px; /* Ajustez la largeur selon vos besoins */
+    height: 15px; /* Ajustez la hauteur selon vos besoins */
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-image: url('icons/readme.png');
+}
+
+.hideReadme {
+    width: 20px; /* Ajustez la largeur selon vos besoins */
+    height: 20px; /* Ajustez la hauteur selon vos besoins */
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-image: url('icons/X.png');
+}

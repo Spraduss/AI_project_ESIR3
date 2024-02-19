@@ -1,0 +1,74 @@
+.chat-messages {
+    background-color: #1e2b3b;
+    text-align: right;
+    width: fit-content;
+    max-width: 700px;
+}
+
+.align-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.align-right {
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comment {
+    border-bottom: 1px solid #acb2b8;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai_comment {
+    color: #acb2b8;
+}
+
+.ai_subcomment {
+    color: gray;
+    font-size: 13px;
+}
+
+.text_review {
+    color: #acb2b8;
+    font-size:13px;
+    padding:5px;
+    word-wrap: break-word;
+}
+
+.entete {
+    margin-right: 0px;
+}
+
+.thumbs {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border: none;
+}
+
+.thumbsImage_neg {
+    background-image: url('icons/down_sized.JPG');
+}
+
+.thumbsImage_pos {
+    background-image: url('icons/up_sized.JPG');
+}
+
+.generatedReview {
+    padding: 5px;
+    background-color: #121a24;
+    word-wrap: break-word;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    color: rgb(213, 213, 213);
+    border: 1px solid #acb2b8;
+    margin-bottom: 10px;
+    width: fit-content;
+    max-width: 700px;
+}
